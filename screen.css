@@ -46,6 +46,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
+    background: #eff1f4;
   font-family: sans-serif;
   color: #2a2a2a; }
 
@@ -56,3 +57,8 @@ a {
 
 #main {
   padding: 50px; }
+h1{
+    color: #000000;
+    font-family: verdana;
+    font-size: 3em;
+}
