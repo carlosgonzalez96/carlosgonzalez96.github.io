@@ -56,9 +56,16 @@ a {
     color: #009ce0; }
 
 #main {
-  padding: 50px; }
+    padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px #dbdbdb;
+}
+p{
+    text-align: center;
+}
 h1{
     color: #000000;
     font-family: verdana;
     font-size: 3em;
+    text-align: center;
 }
