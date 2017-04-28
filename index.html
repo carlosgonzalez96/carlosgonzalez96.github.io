@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
@@ -7,14 +7,20 @@
   </head>
   <body class="index">
     <div id="main" role="main">
-      <h1>Carlos Gonzalez</h1>
-      <p>Here we see my protfolio of my work.</p>
+      <h1 class="title">Carlos Gonzalez</h1>
+      <p class="description">Here we see my protfolio of my work.</p>
       <div id="content">
-          <div id="drunkard" class="project-box">
-            <div id="drunks-img"></div>
-              <p class="drunk-text">This programs executes 100 diffrent colored circles in brownian motion.
-              </p>
-          </div>
+        <ul class="project-style">
+            <li> <img src="drunks.png" alt="montion of dots">
+                <div class="caption">
+                    <div class="blur"></div>
+                    <div class="caption-text">
+                        <h1>Drunkards Walk</h1>
+                        <p>Dots in brownian motion</p>
+                    </div>
+                </div>
+            </li><!--end of first project list item-->
+          </ul>
       </div>    
     </div>
   </body>

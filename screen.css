@@ -1,16 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*{
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,7 +8,7 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
- background: #FFF;   
+ background: url(concrete_seamless.png);   
 }
 
 ol, ul {
@@ -60,44 +48,68 @@ a {
     padding: 50px;
     /*box-shadow: 0px 10px 30px #dbdbdb;*/
 }
-p{
+.description{
     text-align: center;
+    margin-bottom: 20px;
 }
-h1{
+.title {
     color: #000000;
     font-family: verdana;
     font-size: 3em;
     text-align: center;
 }
-.project-box {
-    width:800px;
-    height: 200px;
-    background: #FFF;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    box-shadow: 0px 10px 30px #dbdbdb;
+
+.project-style {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
-#drunkard{
-    margin-top: 50px;
+.project-style li {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
 }
-.drunk-text{
-    line-height: 200px;
-    font-family: verdana;
-    font-size: 12px;
+.project-style li:hover .caption {
+    opacity: 1;
 }
-#drunks-img{
-    background: url(drunks.png);
-    background-size: 300px;
-    background-position: 250px 0px;
-    width: 200px;
-    height: 200px;
-    float:left;
+.project-style img {
+    margin: 0px;
+    width: 400px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
 }
-
-
-
-
-
+.project-style .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out; 
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+.project-style .blur {
+    background-color: rgba(0,0,0,0.65);
+    height: 300px;
+    width: 400px;
+    z-index: 5;
+    position: absolute;
+}
+.project-style .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.project-style .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top: 100px;
+}
 
 
 
