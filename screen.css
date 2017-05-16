@@ -66,6 +66,7 @@ a {
 }
 .project-style li {
     float: left;
+    margin-right: 50px;
     padding: 0px;
     position: relative;
     overflow: hidden;
